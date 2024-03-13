@@ -12,9 +12,13 @@ https://github.com/kentlouisetonino/node-backend/assets/69438999/f2744ba1-6a2b-4
 > - Below are the current supported routes.
 
 ```bash
+# This includes the integration of AWS S3 service.
 /api/aws/s3/upload
 /api/aws/s3/delete
 /api/aws/s3/url
+
+# This includes the integration OpenAI Chat GPT.
+/api/openai/chat
 ```
 
 <br />
