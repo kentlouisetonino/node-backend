@@ -5,6 +5,7 @@ import morgan from 'morgan';
 import RootRoute from './routes/RootRoute';
 import AWSRoute from './routes/AWSRoute';
 import ExpressService from './services/ExpressService';
+import OpenAIRoute from './routes/OpenAIRoute';
 
 // Get the express application instance.
 const app = ExpressService.app;
@@ -18,6 +19,7 @@ app.use(urlencoded({ extended: true }));
 // App other endpoints.
 app.use('/', RootRoute);
 app.use('/api/aws', AWSRoute);
+app.use('/api/openai', OpenAIRoute);
 
 // Separate app and server.
 export default app;
