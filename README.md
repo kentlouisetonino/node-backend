@@ -42,4 +42,7 @@ yarn dev
 
 # Unit Test
 yarn test:all
+
+# URL of the backend server.
+http://localhost:11000
 ```
