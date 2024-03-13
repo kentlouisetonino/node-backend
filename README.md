@@ -1,7 +1,9 @@
 ### DESCRIPTION
 #
 
-https://github.com/kentlouisetonino/node-backend/assets/69438999/f2744ba1-6a2b-44c2-baa1-d4b1a25d577f
+![node-backend-system-design](https://github.com/kentlouisetonino/node-backend/assets/69438999/4b08b84c-363b-4271-82b4-04c3cf29dddc)
+
+<br />
 
 > - A backend server that integrates with different technologies.
 
