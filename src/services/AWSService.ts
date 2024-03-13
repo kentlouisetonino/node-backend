@@ -28,17 +28,6 @@ export interface S3GetSignedURLInterface {
 }
 
 export default class AWSService {
-  /**
-   * Use this method if to upload a file.
-   * @param bucketName string
-   * @param bucketRegion string
-   * @param bucketAccessKeyId string
-   * @param bucketSecretAccessKey string
-   * @param fileName string
-   * @param fileBuffer Buffer
-   * @param fileEncoding string
-   * @param fileContentType string
-   */
   static uploadFile({
     bucketName,
     bucketRegion,
@@ -67,14 +56,6 @@ export default class AWSService {
     return s3.upload(params).promise();
   }
 
-  /**
-   *
-   * @param bucketName string
-   * @param bucketRegion string
-   * @param bucketAccessKeyId string
-   * @param bucketSecretAccessKey string
-   * @param key string
-   */
   static deleteFile({
     bucketName,
     bucketRegion,
@@ -97,14 +78,6 @@ export default class AWSService {
       .promise();
   }
 
-  /**
-   *
-   * @param bucketName string
-   * @param bucketRegion string
-   * @param bucketAccessKeyId string
-   * @param bucketSecretAccessKey string
-   * @param key string
-   */
   static getSignedURL({
     bucketName,
     bucketRegion,
