@@ -28,7 +28,7 @@ export interface S3GetSignedURLInterface {
 }
 
 export default class AWSService {
-  static uploadFile({
+  static s3UploadFile({
     bucketName,
     bucketRegion,
     bucketAccessKeyId,
@@ -56,7 +56,7 @@ export default class AWSService {
     return s3.upload(params).promise();
   }
 
-  static deleteFile({
+  static s3DeleteFile({
     bucketName,
     bucketRegion,
     bucketAccessKeyId,
@@ -78,7 +78,7 @@ export default class AWSService {
       .promise();
   }
 
-  static getSignedURL({
+  static s3GetSignedURL({
     bucketName,
     bucketRegion,
     bucketAccessKeyId,

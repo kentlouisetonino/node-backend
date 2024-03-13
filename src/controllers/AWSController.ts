@@ -31,7 +31,7 @@ export default class FilesController {
       });
     } else {
       try {
-        const s3Object = await AWSService.uploadFile({
+        const s3Object = await AWSService.s3UploadFile({
           bucketName: bucketName,
           bucketRegion: bucketRegion,
           bucketAccessKeyId: bucketAccessKeyId,
@@ -42,7 +42,7 @@ export default class FilesController {
           fileContentType: file.mimetype!,
         });
 
-        const s3ObjectURL = AWSService.getSignedURL({
+        const s3ObjectURL = AWSService.s3GetSignedURL({
           bucketName: bucketName,
           bucketRegion: bucketRegion,
           bucketAccessKeyId: bucketAccessKeyId,
@@ -93,7 +93,7 @@ export default class FilesController {
       });
     } else {
       try {
-        await AWSService.deleteFile({
+        await AWSService.s3DeleteFile({
           bucketName: bucketName,
           bucketRegion: bucketRegion,
           bucketAccessKeyId: bucketAccessKeyId,
@@ -144,7 +144,7 @@ export default class FilesController {
       });
     } else {
       try {
-        const s3ObjectURL = AWSService.getSignedURL({
+        const s3ObjectURL = AWSService.s3GetSignedURL({
           bucketName: bucketName,
           bucketRegion: bucketRegion,
           bucketAccessKeyId: bucketAccessKeyId,
