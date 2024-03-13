@@ -12,6 +12,8 @@
 /api/aws/s3/url
 ```
 
+> - Check the official [docs](https://github.com/kentlouisetonino/node-backend/tree/develop/docs) for further guides.
+
 <br />
 <br />
 
