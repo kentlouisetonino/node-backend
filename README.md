@@ -14,6 +14,9 @@
 > - Below are the current supported routes.
 
 ```bash
+# URL of the backend server.
+http://localhost:11000
+
 # This includes the integration of AWS S3 service.
 /api/aws/s3/upload
 /api/aws/s3/delete
@@ -42,7 +45,4 @@ yarn dev
 
 # Unit Test
 yarn test:all
-
-# URL of the backend server.
-http://localhost:11000
 ```
