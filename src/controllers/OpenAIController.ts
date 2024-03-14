@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import fetch from 'node-fetch';
+import OpenAIService from '../services/OpenAIService';
 
 export default class OpenAIController {
   static async chat(req: Request, res: Response) {
@@ -36,27 +36,15 @@ export default class OpenAIController {
       });
     } else {
       try {
-        const openAIResponse = await fetch(
-          'https://api.openai.com/v1/chat/completions',
-          {
-            method: 'post',
-            body: JSON.stringify({
-              model: model,
-              messages: messages,
-              temperature: temperature,
-            }),
-            headers: {
-              'Content-Type': 'application/json',
-              Authorization: `Bearer ${openAIKey}`,
-            },
-          }
-        );
-
-        // Get the API response data.
-        const data = await openAIResponse.json();
+        const data = await OpenAIService.chat({
+          model: model,
+          messages: messages,
+          openAIKey: openAIKey,
+          temperature: temperature,
+        });
 
         return res.send({ statusCode: 200, data: data });
-      } catch (error: any) {
+      } catch (error: unknown) {
         if (error instanceof Error) {
           return res.send({ statusCode: 500, message: error.message });
         }
