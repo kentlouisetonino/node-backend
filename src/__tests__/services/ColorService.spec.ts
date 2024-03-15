@@ -6,7 +6,12 @@ describe('[src/services/ColorService]', () => {
     done();
   });
 
-  test('b. ColorEnum type should be an object.', (done) => {
+  test('b. ColorService.logText type should be a function.', (done) => {
+    expect(typeof ColorService.logText).toEqual('function');
+    done();
+  });
+
+  test('c. ColorEnum type should be an object.', (done) => {
     expect(typeof ColorEnum).toEqual('object');
     done();
   });
