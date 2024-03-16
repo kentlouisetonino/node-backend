@@ -1,3 +1,4 @@
+require('aws-sdk/lib/maintenance_mode_message').suppress = true;
 import AWSRoute from '../../routes/AWSRoute';
 
 describe('[src/routes/AWSRoute]', () => {

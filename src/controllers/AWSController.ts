@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import AWSService from '../services/AWSService';
 
-export default class FilesController {
+export default class AWSController {
   static async s3Upload(req: Request, res: Response) {
     const bucketName = req.body?.bucketName;
     const bucketRegion = req.body?.bucketRegion;
