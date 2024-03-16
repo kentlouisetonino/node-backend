@@ -14,16 +14,16 @@
 > - Below are the current supported routes.
 
 ```bash
-# URL of the backend server.
-http://localhost:11000
+# Root URL of the backend server.
+http://localhost:11000/api
 
 # This includes the integration of AWS S3 service.
-/api/aws/s3/upload
-/api/aws/s3/delete
-/api/aws/s3/url
+/aws/s3/upload
+/aws/s3/delete
+/aws/s3/url
 
 # This includes the integration OpenAI Chat GPT.
-/api/openai/chat
+/openai/chat
 ```
 
 <br />
