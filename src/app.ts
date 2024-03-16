@@ -6,6 +6,7 @@ import RootRoute from './routes/RootRoute';
 import AWSRoute from './routes/AWSRoute';
 import ExpressService from './services/ExpressService';
 import OpenAIRoute from './routes/OpenAIRoute';
+import MongoDBRoute from './routes/MongoDBRoute';
 
 // Get the express application instance.
 const app = ExpressService.app;
@@ -20,6 +21,7 @@ app.use(urlencoded({ extended: true }));
 app.use('/', RootRoute);
 app.use('/api/aws', AWSRoute);
 app.use('/api/openai', OpenAIRoute);
+app.use('/api/mongodb', MongoDBRoute);
 
 // Separate app and server.
 export default app;
