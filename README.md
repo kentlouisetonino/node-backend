@@ -24,6 +24,9 @@ http://localhost:11000/api
 
 # This includes the integration OpenAI Chat GPT.
 /openai/chat
+
+# This includes the integration of MongoDB.
+/mongodb/create/collection
 ```
 
 <br />
