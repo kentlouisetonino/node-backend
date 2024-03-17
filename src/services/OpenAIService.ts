@@ -1,17 +1,15 @@
-interface MessageProps {
-  role: string;
-  content: string;
-}
-
-interface ChatProps {
-  model: string;
-  messages: MessageProps[];
-  openAIKey: string;
-  temperature: number;
-}
-
 export default class OpenAIService {
-  static async chat({ model, messages, openAIKey, temperature }: ChatProps) {
+  static async chat({
+    model,
+    messages,
+    openAIKey,
+    temperature,
+  }: {
+    model: string;
+    messages: { role: string; content: string }[];
+    openAIKey: string;
+    temperature: number;
+  }) {
     try {
       const openAIResponse = await fetch(
         'https://api.openai.com/v1/chat/completions',
