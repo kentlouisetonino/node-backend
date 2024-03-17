@@ -28,16 +28,16 @@ export default class MongoDBController {
     try {
       await MongoDBService.createCollection({ uri, database, collection });
 
-      return {
+      return res.send({
         statusCode: 200,
         message: 'Successfully created the collection.',
-      };
+      });
     } catch (error: unknown) {
       if (error instanceof Error) {
-        return {
+        return res.send({
           statusCode: 500,
           message: error.message,
-        };
+        });
       }
     }
   }
