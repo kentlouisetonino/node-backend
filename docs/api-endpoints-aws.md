@@ -1,6 +1,6 @@
 ### DESCRIPTION
 #
-> - Below samples are based on  the Postman API Platform.
+> - Below samples are based on the Postman API Platform.
 
 <br />
 <br />
