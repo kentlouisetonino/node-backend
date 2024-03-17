@@ -1,13 +1,15 @@
 import { MongoClient } from 'mongodb';
 
-interface MongoDBRun {
-  uri: string;
-  database: string;
-  collection: string;
-}
-
 export default class MongDBService {
-  static async createCollection({ uri, database, collection }: MongoDBRun) {
+  static async createCollection({
+    uri,
+    database,
+    collection,
+  }: {
+    uri: string;
+    database: string;
+    collection: string;
+  }) {
     const client = new MongoClient(uri);
 
     try {
