@@ -11,17 +11,16 @@ import MongoDBRoute from './routes/MongoDBRoute';
 // Get the express application instance.
 const app = ExpressService.app;
 
-// App middlewares.
+// Setup the app middlewares.
 app.use(morgan('tiny'));
 app.use(express.static('public'));
 app.use(json());
 app.use(urlencoded({ extended: true }));
 
-// App other endpoints.
+// Setup the app endpoints.
 app.use('/', RootRoute);
 app.use('/api/aws', AWSRoute);
 app.use('/api/openai', OpenAIRoute);
 app.use('/api/mongodb', MongoDBRoute);
 
-// Separate app and server.
 export default app;
