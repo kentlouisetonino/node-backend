@@ -1,7 +1,8 @@
 ### DESCRIPTION
 #
 
-![node-backend-system-design](https://github.com/kentlouisetonino/node-backend/assets/69438999/4b08b84c-363b-4271-82b4-04c3cf29dddc)
+![Screenshot from 2024-03-19 20-01-58](https://github.com/kentlouisetonino/node-backend/assets/69438999/55747c89-94e4-4098-b04b-b4c7986cd24b)
+
 
 <br />
 
