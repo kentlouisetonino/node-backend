@@ -1,4 +1,4 @@
-name: node-backend (develop)
+name: node-playground (develop)
 
 on:
   push:
