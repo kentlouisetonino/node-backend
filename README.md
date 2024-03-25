@@ -1,11 +1,5 @@
 ### DESCRIPTION
 #
-
-![Screenshot from 2024-03-19 20-01-58](https://github.com/kentlouisetonino/node-backend/assets/69438999/55747c89-94e4-4098-b04b-b4c7986cd24b)
-
-
-<br />
-
 > - A backend server that integrates with different technologies.
 
 > - This will serves as my playground in `Node.js` backend development.
@@ -29,6 +23,18 @@ http://localhost:11000/api
 # This includes the integration of MongoDB.
 /mongodb/create/collection
 ```
+
+<br />
+<br />
+
+
+
+### SYSTEM DESIGN
+#
+
+<br />
+
+![Screenshot from 2024-03-19 20-01-58](https://github.com/kentlouisetonino/node-backend/assets/69438999/55747c89-94e4-4098-b04b-b4c7986cd24b)
 
 <br />
 <br />
