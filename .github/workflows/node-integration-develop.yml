@@ -1,4 +1,4 @@
-name: node-playground (develop)
+name: node-integration (develop)
 
 on:
   push:
