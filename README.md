@@ -1,4 +1,4 @@
-### DESCRIPTION
+### Description
 #
 > - A backend server that integrates with different technologies.
 
@@ -29,7 +29,7 @@ http://localhost:11000/api
 
 
 
-### SYSTEM DESIGN
+### System Design
 #
 
 <br />
@@ -41,7 +41,7 @@ http://localhost:11000/api
 
 
 
-### LOCAL DEVELOPMENT
+### Local Development
 #
 > - This works well with `Node.js version >= 18`.
 
