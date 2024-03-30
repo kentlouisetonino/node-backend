@@ -2,6 +2,8 @@ import S3 from 'aws-sdk/clients/s3';
 import {
   S3DeleteFileInput,
   S3DeleteFileOutput,
+  S3GetSignedURLInput,
+  S3GetSignedURLOutput,
   S3UploadFileInput,
   S3UploadFileOutput,
 } from '../models/AWSModel';
@@ -63,13 +65,7 @@ export default class AWSService {
     bucketAccessKeyId,
     bucketSecretAccessKey,
     key,
-  }: {
-    bucketName: string;
-    bucketRegion: string;
-    bucketAccessKeyId: string;
-    bucketSecretAccessKey: string;
-    key: string;
-  }) {
+  }: S3GetSignedURLInput): S3GetSignedURLOutput {
     const s3 = new S3({
       region: bucketRegion,
       accessKeyId: bucketAccessKeyId,

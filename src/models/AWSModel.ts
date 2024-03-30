@@ -23,3 +23,13 @@ export interface S3DeleteFileInput {
 }
 
 export type S3DeleteFileOutput = S3.Types.DeleteObjectOutput | AWSError;
+
+export interface S3GetSignedURLInput {
+  bucketName: string;
+  bucketRegion: string;
+  bucketAccessKeyId: string;
+  bucketSecretAccessKey: string;
+  key: string;
+}
+
+export type S3GetSignedURLOutput = string;
