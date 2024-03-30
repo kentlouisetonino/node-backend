@@ -1,15 +1,15 @@
 import { MongoClient } from 'mongodb';
+import {
+  CreateCollectionInput,
+  CreateCollectionOutput,
+} from '../models/MongoDBModel';
 
 export default class MongDBService {
   static async createCollection({
     uri,
     database,
     collection,
-  }: {
-    uri: string;
-    database: string;
-    collection: string;
-  }) {
+  }: CreateCollectionInput): Promise<CreateCollectionOutput> {
     const client = new MongoClient(uri);
 
     try {
