@@ -10,4 +10,9 @@ describe('[src/services/MongoDBService]', () => {
     expect(typeof MongoDBService.createCollection).toEqual('function');
     done();
   });
+
+  test('c. MongoDBService.createDocument type should be a function.', (done) => {
+    expect(typeof MongoDBService.createDocument).toEqual('function');
+    done();
+  });
 });
