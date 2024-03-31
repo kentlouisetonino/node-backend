@@ -1,3 +1,5 @@
+import { InsertOneResult } from 'mongodb';
+
 export interface CreateCollectionInput {
   uri: string;
   database: string;
@@ -13,7 +15,7 @@ export interface CreateDocumentInput {
   document: Object;
 }
 
-export interface CreateDocumentOutput {
+export type CreateDocumentOutput = InsertOneResult<{
   acknowledged: boolean;
   insertedId: string;
-}
+}>;

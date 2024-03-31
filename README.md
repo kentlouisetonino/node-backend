@@ -22,6 +22,7 @@ http://localhost:11000/api
 
 # This includes the integration of MongoDB.
 /mongodb/create/collection
+/mongodb/create/document
 ```
 
 <br />
