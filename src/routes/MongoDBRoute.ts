@@ -5,5 +5,6 @@ import MongoDBController from '../controllers/MongoDBController';
 const router = ExpressService.router;
 
 router.post('/create/collection', MongoDBController.createCollection);
+router.post('/create/document', MongoDBController.createDocument);
 
 export default router;
