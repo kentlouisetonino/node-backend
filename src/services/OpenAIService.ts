@@ -1,15 +1,12 @@
+import { ChatInput, ChatOutput } from '../models/OpenAIModel';
+
 export default class OpenAIService {
   static async chat({
     model,
     messages,
     openAIKey,
     temperature,
-  }: {
-    model: string;
-    messages: { role: string; content: string }[];
-    openAIKey: string;
-    temperature: number;
-  }) {
+  }: ChatInput): Promise<ChatOutput | Error | undefined> {
     try {
       const openAIResponse = await fetch(
         'https://api.openai.com/v1/chat/completions',
