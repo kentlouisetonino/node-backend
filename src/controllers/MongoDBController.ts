@@ -41,6 +41,7 @@ export default class MongoDBController {
       }
     }
   }
+
   static async createDocument(req: Request, res: Response) {
     const uri = req.body?.uri;
     const database = req.body?.database;
