@@ -13,4 +13,7 @@ export interface CreateDocumentInput {
   document: Object;
 }
 
-export type CreateDocumentOutput = any;
+export interface CreateDocumentOutput {
+  acknowledged: boolean;
+  insertedId: string;
+}
