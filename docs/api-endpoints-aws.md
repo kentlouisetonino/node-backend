@@ -1,4 +1,4 @@
-### DESCRIPTION
+### Description
 #
 > - Below samples are based on the Postman API Platform.
 
@@ -7,7 +7,7 @@
 
 
 
-### FILE UPLOAD
+### File Upload
 #
 
 ```plaintext
@@ -36,7 +36,7 @@
 
 
 
-### FILE DELETE
+### File Delete
 #
 
 ```plaintext
@@ -65,7 +65,8 @@
 
 
 
-### FILE URL
+### File URL
+#
 
 ```plaintext
 [REQUEST]
