@@ -22,7 +22,7 @@
     "@types/prettier": "^3.0.0",
     "@types/superagent": "^8.1.5",
     "@types/supertest": "^6.0.1",
-    "aws-sdk": "^2.1596.0",
+    "aws-sdk": "^2.1598.0",
     "babel-cli": "^6.26.0",
     "babel-jest": "^29.7.0",
     "babel-preset-env": "^1.7.0",
@@ -39,7 +39,7 @@
     "supertest": "^6.3.4",
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
-    "typescript": "^5.4.4"
+    "typescript": "^5.4.5"
   },
   "jest": {
     "moduleFileExtensions": [
