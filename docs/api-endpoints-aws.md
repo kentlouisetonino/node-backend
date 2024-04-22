@@ -30,9 +30,9 @@ PAYLOAD: Form-Data
 > - Endpoint for getting the url of object.
 
 ```plaintext
-Method: POST
+METHOD: POST
 URL: http://localhost:11000/api/aws/s3/upload
-Form-Data:
+PAYLOAD: Form-Data
     bucketName: Text
     bucketRegion: Text
     bucketAccessKeyId: Text
