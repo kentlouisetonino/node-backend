@@ -1,89 +1,41 @@
-### Description
-#
-> - Below samples are based on the Postman API Platform.
-
-<br />
-<br />
-
-
-
-### File Upload
+### API Testing
 #
 
-```plaintext
-[REQUEST]
-    Method: POST
-    URL: http://localhost:11000/api/aws/s3/upload
-    Form-Data:
-        bucketName: Text
-        bucketRegion: Text
-        bucketAccessKeyId: Text
-        bucketSecretAccessKey: Text
-        file: File
+> - Endpoint for uploading an object.
 
-[RESPONSE SUCCESS]
-    statusCode: number
-    key: string
-    url: string
-
-[RESPONSE FAILED]
-    statusCode: number
-    error: string
+```bash
+METHOD: POST
+URL: http://localhost:11000/api/aws/s3/upload
+PAYLOAD: Form-Data
+    bucketName: Text
+    bucketRegion: Text
+    bucketAccessKeyId: Text
+    bucketSecretAccessKey: Text
+    file: File
 ```
 
-<br />
-<br />
+> - Endpoint for deleting an object.
 
-
-
-### File Delete
-#
-
-```plaintext
-[REQUEST]
-    Method: POST
-    URL: http://localhost:11000/api/aws/s3/delete
-    Form-Data:
-        bucketName: Text
-        bucketRegion: Text
-        bucketAccessKeyId: Text
-        bucketSecretAccessKey: Text
-        key: Text
-
-[RESPONSE SUCCESS]
-    statusCode: number
-    key: string
-    message: string
-
-[RESPONSE FAILED]
-    statusCode: number
-    error: string
+```bash
+METHOD: POST
+URL: http://localhost:11000/api/aws/s3/delete
+PAYLOAD: Form-Data
+    bucketName: Text
+    bucketRegion: Text
+    bucketAccessKeyId: Text
+    bucketSecretAccessKey: Text
+    key: Text
 ```
 
-<br />
-<br />
-
-
-
-### File URL
-#
+> - Endpoint for getting the url of object.
 
 ```plaintext
-[REQUEST]
-    Method: POST
-    URL: http://localhost:11000/api/aws/s3/upload
-    Form-Data:
-        bucketName: Text
-        bucketRegion: Text
-        bucketAccessKeyId: Text
-        bucketSecretAccessKey: Text
-        key : Text
-
-[RESPONSE SUCCESS]
-    statusCode: number
-    url: string
-
-[RESPONSE FAILED]
-    statusCode: number
-    error: string
+Method: POST
+URL: http://localhost:11000/api/aws/s3/upload
+Form-Data:
+    bucketName: Text
+    bucketRegion: Text
+    bucketAccessKeyId: Text
+    bucketSecretAccessKey: Text
+    key : Text
 ```
